@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4ADBDD2B-E7B5-46C4-9440-15AE81FDDED5</string>
+	<string>8247B1F3-7E46-4D11-A210-6650AA63F5D3</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BlogReader</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5AB4C0BC-606B-48CD-A70E-F524EF8F1652</key>
-		<string>https://github.com/luismendozamx/BlogReader.git</string>
+		<key>E5B5CB8E-5D01-487F-8FD6-B3301893E248</key>
+		<string>https://github.com/luismendozamx/Treehouse.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BlogReader.xcodeproj/project.xcworkspace</string>
+	<string>BlogReader/BlogReader.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5AB4C0BC-606B-48CD-A70E-F524EF8F1652</key>
-		<string>../..</string>
+		<key>E5B5CB8E-5D01-487F-8FD6-B3301893E248</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/luismendozamx/BlogReader.git</string>
+	<string>https://github.com/luismendozamx/Treehouse.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5AB4C0BC-606B-48CD-A70E-F524EF8F1652</string>
+	<string>E5B5CB8E-5D01-487F-8FD6-B3301893E248</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5AB4C0BC-606B-48CD-A70E-F524EF8F1652</string>
+			<string>E5B5CB8E-5D01-487F-8FD6-B3301893E248</string>
 			<key>IDESourceControlWCCName</key>
-			<string>BlogReader</string>
+			<string>Treehouse</string>
 		</dict>
 	</array>
 </dict>
