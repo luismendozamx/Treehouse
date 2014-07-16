@@ -13,11 +13,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="oXX-fg-gnC" detailTextLabel="elX-SY-5QX" style="IBUITableViewCellStyleSubtitle" id="xU3-Yq-DVR">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="oXX-fg-gnC" detailTextLabel="elX-SY-5QX" style="IBUITableViewCellStyleSubtitle" id="xU3-Yq-DVR">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xU3-Yq-DVR" id="kvB-SL-6an">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oXX-fg-gnC">
@@ -36,6 +36,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="c6c-0e-44P" kind="push" identifier="showBlogPost" id="aU6-Wk-I2h"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -48,6 +51,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZK-Fs-Z49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="743" y="24"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="fDK-NC-hsk">
+            <objects>
+                <viewController id="c6c-0e-44P" customClass="GPWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rVm-LF-11Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZpH-rf-JNw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M5C-dF-iFp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="crw-rQ-qsp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hch-oG-Cr8"/>
+                    <connections>
+                        <outlet property="webView" destination="crw-rQ-qsp" id="ZvD-LW-uIt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qp-Pl-lPB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231" y="24"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lMT-kH-pdZ">

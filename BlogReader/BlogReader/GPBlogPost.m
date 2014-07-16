@@ -17,6 +17,7 @@
         self.title = title;
         self.author = nil;
         self.thumbnail = nil;
+        self.url = nil;
     }
     
     return self;

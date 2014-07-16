@@ -20,6 +20,7 @@
 		1E4E8825193306D0009CBE3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E4E8823193306D0009CBE3B /* InfoPlist.strings */; };
 		1E4E8827193306D0009CBE3B /* BlogReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4E8826193306D0009CBE3B /* BlogReaderTests.m */; };
 		1E4E8831193306E3009CBE3B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4E8830193306E3009CBE3B /* MainStoryboard.storyboard */; };
+		1E6673A11976DD5B0073723D /* GPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6673A01976DD5B0073723D /* GPWebViewController.m */; };
 		1EE6456B1935630500057BF0 /* GPBlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE6456A1935630500057BF0 /* GPBlogPost.m */; };
 		1EE769A91933090700141182 /* GPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE769A81933090700141182 /* GPTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,8 @@
 		1E4E8824193306D0009CBE3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E4E8826193306D0009CBE3B /* BlogReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlogReaderTests.m; sourceTree = "<group>"; };
 		1E4E8830193306E3009CBE3B /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1E66739F1976DD5B0073723D /* GPWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPWebViewController.h; sourceTree = "<group>"; };
+		1E6673A01976DD5B0073723D /* GPWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPWebViewController.m; sourceTree = "<group>"; };
 		1EE645691935630500057BF0 /* GPBlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPBlogPost.h; sourceTree = "<group>"; };
 		1EE6456A1935630500057BF0 /* GPBlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPBlogPost.m; sourceTree = "<group>"; };
 		1EE769A71933090700141182 /* GPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableViewController.h; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				1EE769A81933090700141182 /* GPTableViewController.m */,
 				1EE645691935630500057BF0 /* GPBlogPost.h */,
 				1EE6456A1935630500057BF0 /* GPBlogPost.m */,
+				1E66739F1976DD5B0073723D /* GPWebViewController.h */,
+				1E6673A01976DD5B0073723D /* GPWebViewController.m */,
 				1E4E8813193306D0009CBE3B /* Images.xcassets */,
 				1E4E8808193306D0009CBE3B /* Supporting Files */,
 			);
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EE6456B1935630500057BF0 /* GPBlogPost.m in Sources */,
+				1E6673A11976DD5B0073723D /* GPWebViewController.m in Sources */,
 				1EE769A91933090700141182 /* GPTableViewController.m in Sources */,
 				1E4E880E193306D0009CBE3B /* main.m in Sources */,
 				1E4E8812193306D0009CBE3B /* GPAppDelegate.m in Sources */,

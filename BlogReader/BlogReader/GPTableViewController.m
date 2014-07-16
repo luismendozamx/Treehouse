@@ -8,6 +8,7 @@
 
 #import "GPTableViewController.h"
 #import "GPBlogPost.h"
+#import "GPWebViewController.h"
 
 @interface GPTableViewController ()
 
@@ -29,7 +30,7 @@
     [super viewDidLoad];
     
     
-    NSURL *blogUrl = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary"];
+    NSURL *blogUrl = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary/"];
     
     NSData *json = [NSData dataWithContentsOfURL:blogUrl];
     
@@ -95,12 +96,24 @@
     return cell;
 }
 
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"showBlogPost"]){
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        GPBlogPost *blogPost = [self.blogPosts objectAtIndex:indexPath.row];
+        [segue.destinationViewController setBlogPostUrl: blogPost.url];
+        
+    }else{
+        NSLog(@"NO");
+    }
+}
+
+/*
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //Obtener el url del arreglo en el table view y luego con el objecto singleton (único) abrir en safari.
     GPBlogPost *blogPost =[self.blogPosts objectAtIndex:indexPath.row];
     UIApplication *application = [UIApplication sharedApplication];
     [application openURL:blogPost.url];
-}
+}*/
 
 @end
