@@ -52,6 +52,8 @@
         [self.blogPosts addObject:blogPost];
     }
     
+    NSMutableArray *arr = [NSMutableArray arrayWithObjects:@"a", @"b"];
+    
 }
 
 - (void)didReceiveMemoryWarning

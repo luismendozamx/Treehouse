@@ -7,6 +7,7 @@
 //
 
 #import "GPInboxTableViewController.h"
+#import <Parse/Parse.h>
 
 @interface GPInboxTableViewController ()
 
@@ -19,6 +20,9 @@
 {
     [super viewDidLoad];
     [self performSegueWithIdentifier:@"showLogin" sender:self];
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    testObject[@"foo"] = @"bar";
+    [testObject saveInBackground];
 }
 
 
