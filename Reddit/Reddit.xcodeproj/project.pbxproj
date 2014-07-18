@@ -17,6 +17,8 @@
 		1E0FD9F1197891710040483A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FD9F0197891710040483A /* Security.framework */; };
 		1E0FD9F3197891790040483A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FD9F2197891790040483A /* StoreKit.framework */; };
 		1E0FD9F5197891860040483A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FD9F4197891860040483A /* SystemConfiguration.framework */; };
+		1E0FD9F8197898010040483A /* GPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FD9F7197898010040483A /* GPLoginViewController.m */; };
+		1E0FD9FB197898130040483A /* GPSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FD9FA197898130040483A /* GPSignUpViewController.m */; };
 		1E6673AF19772E070073723D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6673AE19772E070073723D /* Foundation.framework */; };
 		1E6673B119772E070073723D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6673B019772E070073723D /* CoreGraphics.framework */; };
 		1E6673B319772E070073723D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6673B219772E070073723D /* UIKit.framework */; };
@@ -60,6 +62,10 @@
 		1E0FD9F0197891710040483A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1E0FD9F2197891790040483A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1E0FD9F4197891860040483A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1E0FD9F6197898010040483A /* GPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPLoginViewController.h; sourceTree = "<group>"; };
+		1E0FD9F7197898010040483A /* GPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPLoginViewController.m; sourceTree = "<group>"; };
+		1E0FD9F9197898130040483A /* GPSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSignUpViewController.h; sourceTree = "<group>"; };
+		1E0FD9FA197898130040483A /* GPSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSignUpViewController.m; sourceTree = "<group>"; };
 		1E6673AB19772E070073723D /* Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6673AE19772E070073723D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E6673B019772E070073723D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -167,6 +173,10 @@
 				1E6673DD19772EA30073723D /* MainStoryboard.storyboard */,
 				1E6673EC197750A50073723D /* GPInboxTableViewController.h */,
 				1E6673ED197750A50073723D /* GPInboxTableViewController.m */,
+				1E0FD9F9197898130040483A /* GPSignUpViewController.h */,
+				1E0FD9FA197898130040483A /* GPSignUpViewController.m */,
+				1E0FD9F6197898010040483A /* GPLoginViewController.h */,
+				1E0FD9F7197898010040483A /* GPLoginViewController.m */,
 				1E6673BD19772E070073723D /* GPAppDelegate.h */,
 				1E6673BE19772E070073723D /* GPAppDelegate.m */,
 				1E6673C019772E070073723D /* Images.xcassets */,
@@ -322,6 +332,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E6673BB19772E070073723D /* main.m in Sources */,
+				1E0FD9F8197898010040483A /* GPLoginViewController.m in Sources */,
+				1E0FD9FB197898130040483A /* GPSignUpViewController.m in Sources */,
 				1E6673EE197750A50073723D /* GPInboxTableViewController.m in Sources */,
 				1E6673BF19772E070073723D /* GPAppDelegate.m in Sources */,
 			);

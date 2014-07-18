@@ -8,7 +8,7 @@
         <scene sceneID="du3-Lx-AsY">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="H2C-Ab-jFR" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="kIQ-gQ-xbh">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="1227" y="-91"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="0c1-tC-FAN">
             <objects>
-                <viewController id="4SX-k6-XEQ" sceneMemberID="viewController">
+                <viewController id="4SX-k6-XEQ" customClass="GPLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oyY-Ox-FsM"/>
                         <viewControllerLayoutGuide type="bottom" id="iDZ-Ur-6jp"/>
@@ -170,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="1648" y="-91"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="TqH-4H-N1e">
             <objects>
-                <viewController id="SMH-BQ-zcv" sceneMemberID="viewController">
+                <viewController id="SMH-BQ-zcv" customClass="GPSignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HD4-y2-a6h"/>
                         <viewControllerLayoutGuide type="bottom" id="ARt-1P-5pQ"/>
@@ -206,11 +206,19 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpButton:" destination="SMH-BQ-zcv" eventType="touchUpInside" id="Kge-cs-d9D"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="XWt-WO-ewR"/>
+                    <connections>
+                        <outlet property="emailField" destination="usa-Rk-BST" id="ciJ-JX-nb2"/>
+                        <outlet property="passwordField" destination="b1j-OL-Lee" id="Pro-tN-qyg"/>
+                        <outlet property="userNameField" destination="TQO-ha-4J4" id="VbE-zE-PHA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZf-4M-Icr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
