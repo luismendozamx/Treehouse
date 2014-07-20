@@ -144,6 +144,9 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="login:" destination="4SX-k6-XEQ" eventType="touchUpInside" id="ZJG-6L-O9Z"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs7-iS-MrX">
                                 <rect key="frame" x="37" y="240" width="183" height="21"/>
@@ -165,6 +168,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="xS8-FL-lZr" id="moM-hE-m8r"/>
+                        <outlet property="usernameField" destination="hVh-FH-q4f" id="90G-7f-WjA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzm-L4-Jtf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
