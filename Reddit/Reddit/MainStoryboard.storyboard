@@ -105,7 +105,13 @@
                             <outlet property="delegate" destination="OOP-er-XsD" id="vZg-eS-N8m"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="gvV-yh-XYQ"/>
+                    <navigationItem key="navigationItem" id="gvV-yh-XYQ">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="yCc-qN-YUP">
+                            <connections>
+                                <action selector="logOut:" destination="OOP-er-XsD" id="VRi-QK-cZ9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="4SX-k6-XEQ" kind="push" identifier="showLogin" id="Zh1-31-Cat"/>
                     </connections>

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface GPInboxTableViewController : UITableViewController
+- (IBAction)logOut:(id)sender;
 
 @end

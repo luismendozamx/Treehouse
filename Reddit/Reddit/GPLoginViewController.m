@@ -19,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.hidesBackButton = YES;
     // Do any additional setup after loading the view.
 }
 
@@ -30,13 +31,12 @@
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Make sure you enter a username and password!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         [alertView show];
     }else{
-        
         [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser *user, NSError *error) {
             if(error){
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Sorry! There was an error logging in." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
                 [alertView show];
             }else{
-                
+                [self.navigationController popToRootViewControllerAnimated:YES];
             }
         }];
     }
