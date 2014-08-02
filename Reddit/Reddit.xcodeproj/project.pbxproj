@@ -19,6 +19,8 @@
 		1E0FD9F5197891860040483A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FD9F4197891860040483A /* SystemConfiguration.framework */; };
 		1E0FD9F8197898010040483A /* GPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FD9F7197898010040483A /* GPLoginViewController.m */; };
 		1E0FD9FB197898130040483A /* GPSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FD9FA197898130040483A /* GPSignUpViewController.m */; };
+		1E3507B5198D73DA00430F0E /* GPEditFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3507B4198D73DA00430F0E /* GPEditFriendsTableViewController.m */; };
+		1E3507B8198D7B5700430F0E /* GPFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3507B7198D7B5700430F0E /* GPFriendsTableViewController.m */; };
 		1E6673AF19772E070073723D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6673AE19772E070073723D /* Foundation.framework */; };
 		1E6673B119772E070073723D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6673B019772E070073723D /* CoreGraphics.framework */; };
 		1E6673B319772E070073723D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6673B219772E070073723D /* UIKit.framework */; };
@@ -66,6 +68,10 @@
 		1E0FD9F7197898010040483A /* GPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPLoginViewController.m; sourceTree = "<group>"; };
 		1E0FD9F9197898130040483A /* GPSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSignUpViewController.h; sourceTree = "<group>"; };
 		1E0FD9FA197898130040483A /* GPSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSignUpViewController.m; sourceTree = "<group>"; };
+		1E3507B3198D73DA00430F0E /* GPEditFriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPEditFriendsTableViewController.h; sourceTree = "<group>"; };
+		1E3507B4198D73DA00430F0E /* GPEditFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPEditFriendsTableViewController.m; sourceTree = "<group>"; };
+		1E3507B6198D7B5700430F0E /* GPFriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFriendsTableViewController.h; sourceTree = "<group>"; };
+		1E3507B7198D7B5700430F0E /* GPFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFriendsTableViewController.m; sourceTree = "<group>"; };
 		1E6673AB19772E070073723D /* Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6673AE19772E070073723D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E6673B019772E070073723D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -177,6 +183,10 @@
 				1E0FD9FA197898130040483A /* GPSignUpViewController.m */,
 				1E0FD9F6197898010040483A /* GPLoginViewController.h */,
 				1E0FD9F7197898010040483A /* GPLoginViewController.m */,
+				1E3507B6198D7B5700430F0E /* GPFriendsTableViewController.h */,
+				1E3507B7198D7B5700430F0E /* GPFriendsTableViewController.m */,
+				1E3507B3198D73DA00430F0E /* GPEditFriendsTableViewController.h */,
+				1E3507B4198D73DA00430F0E /* GPEditFriendsTableViewController.m */,
 				1E6673BD19772E070073723D /* GPAppDelegate.h */,
 				1E6673BE19772E070073723D /* GPAppDelegate.m */,
 				1E6673C019772E070073723D /* Images.xcassets */,
@@ -335,6 +345,8 @@
 				1E0FD9F8197898010040483A /* GPLoginViewController.m in Sources */,
 				1E0FD9FB197898130040483A /* GPSignUpViewController.m in Sources */,
 				1E6673EE197750A50073723D /* GPInboxTableViewController.m in Sources */,
+				1E3507B5198D73DA00430F0E /* GPEditFriendsTableViewController.m in Sources */,
+				1E3507B8198D7B5700430F0E /* GPFriendsTableViewController.m in Sources */,
 				1E6673BF19772E070073723D /* GPAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
