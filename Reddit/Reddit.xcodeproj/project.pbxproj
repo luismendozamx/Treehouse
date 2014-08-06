@@ -21,6 +21,7 @@
 		1E0FD9FB197898130040483A /* GPSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FD9FA197898130040483A /* GPSignUpViewController.m */; };
 		1E3507B5198D73DA00430F0E /* GPEditFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3507B4198D73DA00430F0E /* GPEditFriendsTableViewController.m */; };
 		1E3507B8198D7B5700430F0E /* GPFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3507B7198D7B5700430F0E /* GPFriendsTableViewController.m */; };
+		1E60F52119913D2300A83748 /* GPCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E60F52019913D2300A83748 /* GPCameraViewController.m */; };
 		1E6673AF19772E070073723D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6673AE19772E070073723D /* Foundation.framework */; };
 		1E6673B119772E070073723D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6673B019772E070073723D /* CoreGraphics.framework */; };
 		1E6673B319772E070073723D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6673B219772E070073723D /* UIKit.framework */; };
@@ -72,6 +73,8 @@
 		1E3507B4198D73DA00430F0E /* GPEditFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPEditFriendsTableViewController.m; sourceTree = "<group>"; };
 		1E3507B6198D7B5700430F0E /* GPFriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFriendsTableViewController.h; sourceTree = "<group>"; };
 		1E3507B7198D7B5700430F0E /* GPFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFriendsTableViewController.m; sourceTree = "<group>"; };
+		1E60F51F19913D2300A83748 /* GPCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCameraViewController.h; sourceTree = "<group>"; };
+		1E60F52019913D2300A83748 /* GPCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCameraViewController.m; sourceTree = "<group>"; };
 		1E6673AB19772E070073723D /* Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6673AE19772E070073723D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E6673B019772E070073723D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -177,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				1E6673DD19772EA30073723D /* MainStoryboard.storyboard */,
+				1E60F51F19913D2300A83748 /* GPCameraViewController.h */,
+				1E60F52019913D2300A83748 /* GPCameraViewController.m */,
 				1E6673EC197750A50073723D /* GPInboxTableViewController.h */,
 				1E6673ED197750A50073723D /* GPInboxTableViewController.m */,
 				1E0FD9F9197898130040483A /* GPSignUpViewController.h */,
@@ -343,6 +348,7 @@
 			files = (
 				1E6673BB19772E070073723D /* main.m in Sources */,
 				1E0FD9F8197898010040483A /* GPLoginViewController.m in Sources */,
+				1E60F52119913D2300A83748 /* GPCameraViewController.m in Sources */,
 				1E0FD9FB197898130040483A /* GPSignUpViewController.m in Sources */,
 				1E6673EE197750A50073723D /* GPInboxTableViewController.m in Sources */,
 				1E3507B5198D73DA00430F0E /* GPEditFriendsTableViewController.m in Sources */,
