@@ -16,7 +16,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="lxI-Be-HjN" kind="relationship" relationship="viewControllers" id="hIw-BJ-Jnf"/>
-                        <segue destination="X9B-iF-bVM" kind="relationship" relationship="viewControllers" id="enj-Qd-Gas"/>
+                        <segue destination="xg4-Yr-QxW" kind="relationship" relationship="viewControllers" id="enj-Qd-Gas"/>
                         <segue destination="QtQ-ep-WJO" kind="relationship" relationship="viewControllers" id="stK-qJ-pJ4"/>
                     </connections>
                 </tabBarController>
@@ -88,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="1702" y="1245"/>
         </scene>
-        <!--Camera View Controller - Camera-->
+        <!--Camera View Controller - Recipients-->
         <scene sceneID="SWp-PY-G9V">
             <objects>
                 <tableViewController id="X9B-iF-bVM" customClass="GPCameraViewController" sceneMemberID="viewController">
@@ -97,8 +97,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="g9G-Ot-TZd">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="g9G-Ot-TZd">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g9G-Ot-TZd" id="oxS-Lx-rN0">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -111,11 +111,22 @@
                             <outlet property="delegate" destination="X9B-iF-bVM" id="aZI-Yn-Wsf"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Camera" image="camera.png" id="UZ2-6k-xKl"/>
+                    <navigationItem key="navigationItem" title="Recipients" id="fjX-9t-dq7">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Clf-HS-SSh">
+                            <connections>
+                                <action selector="cancel:" destination="X9B-iF-bVM" id="6gi-h6-agL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="WMu-1X-3uN">
+                            <connections>
+                                <action selector="send:" destination="X9B-iF-bVM" id="Unu-JX-pgf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="230-n0-OOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="703" y="570"/>
+            <point key="canvasLocation" x="1229" y="570"/>
         </scene>
         <!--Inbox Table View Controller-->
         <scene sceneID="y5c-z9-qnw">
@@ -309,6 +320,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HbK-32-QtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="703" y="1241"/>
+        </scene>
+        <!--Navigation Controller - Camera-->
+        <scene sceneID="vDm-OH-2B6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xg4-Yr-QxW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Camera" image="camera.png" id="UZ2-6k-xKl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zwA-ae-reD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X9B-iF-bVM" kind="relationship" relationship="rootViewController" id="few-EN-ZK4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="saa-qO-rRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="570"/>
         </scene>
     </scenes>
     <resources>

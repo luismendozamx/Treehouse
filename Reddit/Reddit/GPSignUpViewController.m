@@ -40,7 +40,7 @@
                 [self.navigationController popToRootViewControllerAnimated:YES];
             } else {
                 NSString *errorString = [error userInfo][@"error"];
-                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Make sure you enter a username and password!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
                 [alertView show];
             }
         }];
