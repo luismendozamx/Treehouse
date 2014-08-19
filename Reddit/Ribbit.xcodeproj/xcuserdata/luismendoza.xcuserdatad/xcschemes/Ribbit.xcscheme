@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1E6673AA19772E070073723D"
                BuildableName = "Reddit.app"
-               BlueprintName = "Reddit"
-               ReferencedContainer = "container:Reddit.xcodeproj">
+               BlueprintName = "Ribbit"
+               ReferencedContainer = "container:Ribbit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1E6673C519772E070073723D"
                BuildableName = "RedditTests.xctest"
-               BlueprintName = "RedditTests"
-               ReferencedContainer = "container:Reddit.xcodeproj">
+               BlueprintName = "RibbitTests"
+               ReferencedContainer = "container:Ribbit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1E6673AA19772E070073723D"
             BuildableName = "Reddit.app"
-            BlueprintName = "Reddit"
-            ReferencedContainer = "container:Reddit.xcodeproj">
+            BlueprintName = "Ribbit"
+            ReferencedContainer = "container:Ribbit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1E6673AA19772E070073723D"
             BuildableName = "Reddit.app"
-            BlueprintName = "Reddit"
-            ReferencedContainer = "container:Reddit.xcodeproj">
+            BlueprintName = "Ribbit"
+            ReferencedContainer = "container:Ribbit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1E6673AA19772E070073723D"
             BuildableName = "Reddit.app"
-            BlueprintName = "Reddit"
-            ReferencedContainer = "container:Reddit.xcodeproj">
+            BlueprintName = "Ribbit"
+            ReferencedContainer = "container:Ribbit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

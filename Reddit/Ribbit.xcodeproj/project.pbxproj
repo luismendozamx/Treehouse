@@ -75,20 +75,20 @@
 		1E3507B7198D7B5700430F0E /* GPFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFriendsTableViewController.m; sourceTree = "<group>"; };
 		1E60F51F19913D2300A83748 /* GPCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCameraViewController.h; sourceTree = "<group>"; };
 		1E60F52019913D2300A83748 /* GPCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCameraViewController.m; sourceTree = "<group>"; };
-		1E6673AB19772E070073723D /* Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E6673AB19772E070073723D /* Ribbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ribbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6673AE19772E070073723D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E6673B019772E070073723D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1E6673B219772E070073723D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		1E6673B619772E070073723D /* Reddit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Reddit-Info.plist"; sourceTree = "<group>"; };
+		1E6673B619772E070073723D /* Ribbit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ribbit-Info.plist"; sourceTree = "<group>"; };
 		1E6673B819772E070073723D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E6673BA19772E070073723D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1E6673BC19772E070073723D /* Reddit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reddit-Prefix.pch"; sourceTree = "<group>"; };
+		1E6673BC19772E070073723D /* Ribbit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ribbit-Prefix.pch"; sourceTree = "<group>"; };
 		1E6673BD19772E070073723D /* GPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPAppDelegate.h; sourceTree = "<group>"; };
 		1E6673BE19772E070073723D /* GPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPAppDelegate.m; sourceTree = "<group>"; };
 		1E6673C019772E070073723D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1E6673C619772E070073723D /* RedditTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E6673C619772E070073723D /* RibbitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RibbitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6673C719772E070073723D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		1E6673CF19772E070073723D /* RedditTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedditTests-Info.plist"; sourceTree = "<group>"; };
+		1E6673CF19772E070073723D /* RibbitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RibbitTests-Info.plist"; sourceTree = "<group>"; };
 		1E6673D119772E070073723D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E6673D319772E070073723D /* RedditTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedditTests.m; sourceTree = "<group>"; };
 		1E6673DD19772EA30073723D /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -149,8 +149,8 @@
 		1E6673AC19772E070073723D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1E6673AB19772E070073723D /* Reddit.app */,
-				1E6673C619772E070073723D /* RedditTests.xctest */,
+				1E6673AB19772E070073723D /* Ribbit.app */,
+				1E6673C619772E070073723D /* RibbitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,10 +204,10 @@
 		1E6673B519772E070073723D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1E6673B619772E070073723D /* Reddit-Info.plist */,
+				1E6673B619772E070073723D /* Ribbit-Info.plist */,
 				1E6673B719772E070073723D /* InfoPlist.strings */,
 				1E6673BA19772E070073723D /* main.m */,
-				1E6673BC19772E070073723D /* Reddit-Prefix.pch */,
+				1E6673BC19772E070073723D /* Ribbit-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -224,7 +224,7 @@
 		1E6673CE19772E070073723D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1E6673CF19772E070073723D /* RedditTests-Info.plist */,
+				1E6673CF19772E070073723D /* RibbitTests-Info.plist */,
 				1E6673D019772E070073723D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -246,9 +246,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1E6673AA19772E070073723D /* Reddit */ = {
+		1E6673AA19772E070073723D /* Ribbit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1E6673D719772E070073723D /* Build configuration list for PBXNativeTarget "Reddit" */;
+			buildConfigurationList = 1E6673D719772E070073723D /* Build configuration list for PBXNativeTarget "Ribbit" */;
 			buildPhases = (
 				1E6673A719772E070073723D /* Sources */,
 				1E6673A819772E070073723D /* Frameworks */,
@@ -258,14 +258,14 @@
 			);
 			dependencies = (
 			);
-			name = Reddit;
+			name = Ribbit;
 			productName = Reddit;
-			productReference = 1E6673AB19772E070073723D /* Reddit.app */;
+			productReference = 1E6673AB19772E070073723D /* Ribbit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1E6673C519772E070073723D /* RedditTests */ = {
+		1E6673C519772E070073723D /* RibbitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1E6673DA19772E070073723D /* Build configuration list for PBXNativeTarget "RedditTests" */;
+			buildConfigurationList = 1E6673DA19772E070073723D /* Build configuration list for PBXNativeTarget "RibbitTests" */;
 			buildPhases = (
 				1E6673C219772E070073723D /* Sources */,
 				1E6673C319772E070073723D /* Frameworks */,
@@ -276,9 +276,9 @@
 			dependencies = (
 				1E6673CC19772E070073723D /* PBXTargetDependency */,
 			);
-			name = RedditTests;
+			name = RibbitTests;
 			productName = RedditTests;
-			productReference = 1E6673C619772E070073723D /* RedditTests.xctest */;
+			productReference = 1E6673C619772E070073723D /* RibbitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +296,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1E6673A619772E070073723D /* Build configuration list for PBXProject "Reddit" */;
+			buildConfigurationList = 1E6673A619772E070073723D /* Build configuration list for PBXProject "Ribbit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -308,8 +308,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1E6673AA19772E070073723D /* Reddit */,
-				1E6673C519772E070073723D /* RedditTests */,
+				1E6673AA19772E070073723D /* Ribbit */,
+				1E6673C519772E070073723D /* RibbitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -370,7 +370,7 @@
 /* Begin PBXTargetDependency section */
 		1E6673CC19772E070073723D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1E6673AA19772E070073723D /* Reddit */;
+			target = 1E6673AA19772E070073723D /* Ribbit */;
 			targetProxy = 1E6673CB19772E070073723D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -475,10 +475,10 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Reddit/Reddit-Prefix.pch";
-				INFOPLIST_FILE = "Reddit/Reddit-Info.plist";
+				GCC_PREFIX_HEADER = "Reddit/Ribbit-Prefix.pch";
+				INFOPLIST_FILE = "Reddit/Ribbit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Ribbit;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -494,10 +494,10 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Reddit/Reddit-Prefix.pch";
-				INFOPLIST_FILE = "Reddit/Reddit-Info.plist";
+				GCC_PREFIX_HEADER = "Reddit/Ribbit-Prefix.pch";
+				INFOPLIST_FILE = "Reddit/Ribbit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Ribbit;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -518,8 +518,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "RedditTests/RedditTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "RedditTests/RibbitTests-Info.plist";
+				PRODUCT_NAME = RibbitTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -536,8 +536,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Reddit/Reddit-Prefix.pch";
-				INFOPLIST_FILE = "RedditTests/RedditTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "RedditTests/RibbitTests-Info.plist";
+				PRODUCT_NAME = RibbitTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -546,7 +546,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1E6673A619772E070073723D /* Build configuration list for PBXProject "Reddit" */ = {
+		1E6673A619772E070073723D /* Build configuration list for PBXProject "Ribbit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1E6673D519772E070073723D /* Debug */,
@@ -555,7 +555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1E6673D719772E070073723D /* Build configuration list for PBXNativeTarget "Reddit" */ = {
+		1E6673D719772E070073723D /* Build configuration list for PBXNativeTarget "Ribbit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1E6673D819772E070073723D /* Debug */,
@@ -564,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1E6673DA19772E070073723D /* Build configuration list for PBXNativeTarget "RedditTests" */ = {
+		1E6673DA19772E070073723D /* Build configuration list for PBXNativeTarget "RibbitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1E6673DB19772E070073723D /* Debug */,
