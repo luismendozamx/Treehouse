@@ -42,6 +42,11 @@
 		1E6673EA19772FF90073723D /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E6673E419772FF90073723D /* inbox.png */; };
 		1E6673EB19772FF90073723D /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E6673E519772FF90073723D /* inbox@2x.png */; };
 		1E6673EE197750A50073723D /* GPInboxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6673ED197750A50073723D /* GPInboxTableViewController.m */; };
+		1E86D3F019A3ECF200BAB4EB /* GPImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E86D3EF19A3ECF200BAB4EB /* GPImageViewController.m */; };
+		1ECE963619A3DEAB00458D8A /* icon_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECE963219A3DEAB00458D8A /* icon_image.png */; };
+		1ECE963719A3DEAB00458D8A /* icon_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECE963319A3DEAB00458D8A /* icon_image@2x.png */; };
+		1ECE963819A3DEAB00458D8A /* icon_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECE963419A3DEAB00458D8A /* icon_video.png */; };
+		1ECE963919A3DEAB00458D8A /* icon_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECE963519A3DEAB00458D8A /* icon_video@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +105,12 @@
 		1E6673E519772FF90073723D /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
 		1E6673EC197750A50073723D /* GPInboxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPInboxTableViewController.h; sourceTree = "<group>"; };
 		1E6673ED197750A50073723D /* GPInboxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPInboxTableViewController.m; sourceTree = "<group>"; };
+		1E86D3EE19A3ECF200BAB4EB /* GPImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPImageViewController.h; sourceTree = "<group>"; };
+		1E86D3EF19A3ECF200BAB4EB /* GPImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPImageViewController.m; sourceTree = "<group>"; };
+		1ECE963219A3DEAB00458D8A /* icon_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_image.png; sourceTree = "<group>"; };
+		1ECE963319A3DEAB00458D8A /* icon_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_image@2x.png"; sourceTree = "<group>"; };
+		1ECE963419A3DEAB00458D8A /* icon_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_video.png; sourceTree = "<group>"; };
+		1ECE963519A3DEAB00458D8A /* icon_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_video@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +150,8 @@
 		1E6673A219772E070073723D = {
 			isa = PBXGroup;
 			children = (
-				1E6673B419772E070073723D /* Reddit */,
-				1E6673CD19772E070073723D /* RedditTests */,
+				1E6673B419772E070073723D /* Ribbit */,
+				1E6673CD19772E070073723D /* RibbitTests */,
 				1E6673AD19772E070073723D /* Frameworks */,
 				1E6673AC19772E070073723D /* Products */,
 			);
@@ -176,10 +187,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1E6673B419772E070073723D /* Reddit */ = {
+		1E6673B419772E070073723D /* Ribbit */ = {
 			isa = PBXGroup;
 			children = (
 				1E6673DD19772EA30073723D /* MainStoryboard.storyboard */,
+				1E86D3EE19A3ECF200BAB4EB /* GPImageViewController.h */,
+				1E86D3EF19A3ECF200BAB4EB /* GPImageViewController.m */,
 				1E60F51F19913D2300A83748 /* GPCameraViewController.h */,
 				1E60F52019913D2300A83748 /* GPCameraViewController.m */,
 				1E6673EC197750A50073723D /* GPInboxTableViewController.h */,
@@ -198,6 +211,7 @@
 				1E6673B519772E070073723D /* Supporting Files */,
 				1E6673DF19772FE00073723D /* Images */,
 			);
+			name = Ribbit;
 			path = Reddit;
 			sourceTree = "<group>";
 		};
@@ -212,12 +226,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1E6673CD19772E070073723D /* RedditTests */ = {
+		1E6673CD19772E070073723D /* RibbitTests */ = {
 			isa = PBXGroup;
 			children = (
 				1E6673D319772E070073723D /* RedditTests.m */,
 				1E6673CE19772E070073723D /* Supporting Files */,
 			);
+			name = RibbitTests;
 			path = RedditTests;
 			sourceTree = "<group>";
 		};
@@ -233,6 +248,10 @@
 		1E6673DF19772FE00073723D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1ECE963219A3DEAB00458D8A /* icon_image.png */,
+				1ECE963319A3DEAB00458D8A /* icon_image@2x.png */,
+				1ECE963419A3DEAB00458D8A /* icon_video.png */,
+				1ECE963519A3DEAB00458D8A /* icon_video@2x.png */,
 				1E6673E019772FF90073723D /* camera.png */,
 				1E6673E119772FF90073723D /* camera@2x.png */,
 				1E6673E219772FF90073723D /* friends.png */,
@@ -319,15 +338,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ECE963819A3DEAB00458D8A /* icon_video.png in Resources */,
 				1E6673DE19772EA30073723D /* MainStoryboard.storyboard in Resources */,
 				1E6673E819772FF90073723D /* friends.png in Resources */,
+				1ECE963619A3DEAB00458D8A /* icon_image.png in Resources */,
 				1E6673E919772FF90073723D /* friends@2x.png in Resources */,
 				1E6673E719772FF90073723D /* camera@2x.png in Resources */,
 				1E6673EA19772FF90073723D /* inbox.png in Resources */,
 				1E6673B919772E070073723D /* InfoPlist.strings in Resources */,
+				1ECE963719A3DEAB00458D8A /* icon_image@2x.png in Resources */,
 				1E6673E619772FF90073723D /* camera.png in Resources */,
 				1E6673C119772E070073723D /* Images.xcassets in Resources */,
 				1E6673EB19772FF90073723D /* inbox@2x.png in Resources */,
+				1ECE963919A3DEAB00458D8A /* icon_video@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +374,7 @@
 				1E60F52119913D2300A83748 /* GPCameraViewController.m in Sources */,
 				1E0FD9FB197898130040483A /* GPSignUpViewController.m in Sources */,
 				1E6673EE197750A50073723D /* GPInboxTableViewController.m in Sources */,
+				1E86D3F019A3ECF200BAB4EB /* GPImageViewController.m in Sources */,
 				1E3507B5198D73DA00430F0E /* GPEditFriendsTableViewController.m in Sources */,
 				1E3507B8198D7B5700430F0E /* GPFriendsTableViewController.m in Sources */,
 				1E6673BF19772E070073723D /* GPAppDelegate.m in Sources */,

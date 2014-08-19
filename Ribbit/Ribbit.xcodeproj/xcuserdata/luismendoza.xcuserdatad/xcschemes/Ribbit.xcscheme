@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1E6673AA19772E070073723D"
-               BuildableName = "Reddit.app"
+               BuildableName = "Ribbit.app"
                BlueprintName = "Ribbit"
                ReferencedContainer = "container:Ribbit.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1E6673C519772E070073723D"
-               BuildableName = "RedditTests.xctest"
+               BuildableName = "RibbitTests.xctest"
                BlueprintName = "RibbitTests"
                ReferencedContainer = "container:Ribbit.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1E6673AA19772E070073723D"
-            BuildableName = "Reddit.app"
+            BuildableName = "Ribbit.app"
             BlueprintName = "Ribbit"
             ReferencedContainer = "container:Ribbit.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1E6673AA19772E070073723D"
-            BuildableName = "Reddit.app"
+            BuildableName = "Ribbit.app"
             BlueprintName = "Ribbit"
             ReferencedContainer = "container:Ribbit.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1E6673AA19772E070073723D"
-            BuildableName = "Reddit.app"
+            BuildableName = "Ribbit.app"
             BlueprintName = "Ribbit"
             ReferencedContainer = "container:Ribbit.xcodeproj">
          </BuildableReference>

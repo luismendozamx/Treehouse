@@ -7,7 +7,7 @@
 //
 
 #import "GPInboxTableViewController.h"
-#import <Parse/Parse.h>
+#import "GPImageViewController.h"
 
 @interface GPInboxTableViewController ()
 
@@ -19,6 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.moviePlayer = [[MPMoviePlayerController alloc] init];
     
     PFUser *currentUser = [PFUser currentUser];
     if(currentUser){
@@ -46,6 +48,11 @@
     if ([segue.identifier isEqualToString:@"showLogin"]){
         [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
     }
+    if ([segue.identifier isEqualToString:@"showImage"]){
+        [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
+        GPImageViewController *imageViewController = (GPImageViewController *) segue.destinationViewController;
+        imageViewController.message = self.selectedMessage;
+    }
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -59,7 +66,6 @@
         }else{
             self.messages = objects;
             [self.tableView reloadData];
-            NSLog(@"Retrieved %d messages", self.messages.count);
         }
     }];
     
@@ -88,57 +94,44 @@
     PFObject *message = [self.messages objectAtIndex:indexPath.row];
     cell.textLabel.text = [message objectForKey:@"senderName"];
     
+    NSString *fileType = [message objectForKey:@"fileType"];
+    if ([fileType isEqualToString:@"image"]){
+        cell.imageView.image = [UIImage imageNamed:@"icon_image"];
+    }else{
+        cell.imageView.image = [UIImage imageNamed:@"icon_video"];
+    }
+    
     return cell;
 }
 
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    self.selectedMessage = [self.messages objectAtIndex:indexPath.row];
+    
+    NSString *fileType = [self.selectedMessage objectForKey:@"fileType"];
+    if ([fileType isEqualToString:@"image"]){
+        [self performSegueWithIdentifier:@"showImage" sender:self];
+    }else{
+        PFFile *videoFile = [self.selectedMessage objectForKey:@"file"];
+        NSURL *fileUrl = [NSURL URLWithString:videoFile.url];
+        self.moviePlayer.contentURL = fileUrl;
+        [self.moviePlayer prepareToPlay];
+        [self.moviePlayer thumbnailImageAtTime:0 timeOption:MPMovieTimeOptionNearestKeyFrame];
+        
+        [self.view addSubview:self.moviePlayer.view];
+        [self.moviePlayer setFullscreen:YES animated:YES];
+    }
+    
+    //Delete
+    NSMutableArray *recepientIds = [NSMutableArray arrayWithArray:[self.selectedMessage objectForKey:@"recepientIds"]];
+    
+    if([recepientIds count] == 1){
+        //delete from backend
+        [self.selectedMessage deleteInBackground];
+    }else{
+        //remove and save it
+        [recepientIds removeObject:[[PFUser currentUser] objectId]];
+        [self.selectedMessage saveInBackground];
+    }
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

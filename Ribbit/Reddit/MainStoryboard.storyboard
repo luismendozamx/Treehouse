@@ -160,6 +160,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="4SX-k6-XEQ" kind="push" identifier="showLogin" id="Zh1-31-Cat"/>
+                        <segue destination="HIO-oD-D6l" kind="push" identifier="showImage" id="fb7-UI-Amj"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="beh-1O-ITm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -282,6 +283,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZf-4M-Icr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2038" y="-91"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="9DI-e5-YwB">
+            <objects>
+                <viewController id="HIO-oD-D6l" customClass="GPImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d6R-QW-VWT"/>
+                        <viewControllerLayoutGuide type="bottom" id="lkv-Pt-r3a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vbl-Hw-oBt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NrY-69-jSa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gKe-x1-Phh"/>
+                    <connections>
+                        <outlet property="imageView" destination="NrY-69-jSa" id="H3g-D0-umj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4oR-NU-gva" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648" y="-764"/>
         </scene>
         <!--Navigation Controller - Inbox-->
         <scene sceneID="din-3g-PnR">
