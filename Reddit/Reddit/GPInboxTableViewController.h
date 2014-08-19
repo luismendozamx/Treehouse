@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface GPInboxTableViewController : UITableViewController
+
+@property (nonatomic, strong) NSArray *messages;
+
 - (IBAction)logOut:(id)sender;
 
 @end
