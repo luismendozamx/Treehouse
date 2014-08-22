@@ -9,3 +9,5 @@ rake db:migrate RAILS_ENV=test
 #Create model
 rails generate model todo_item todo_list:references content:string
 rails generate controller todo_items index -p
+
+rails generate migration add_completed_at_to_todo_items
