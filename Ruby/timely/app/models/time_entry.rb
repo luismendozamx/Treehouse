@@ -1,2 +1,3 @@
-class TimeEntry < ActiveRecord::Base
+class TimeEntry < AccountEntry
+  belongs_to :employee
 end
