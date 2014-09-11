@@ -30,7 +30,8 @@
     [super viewDidLoad];
     
     
-    NSURL *blogUrl = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary/"];
+    //NSURL *blogUrl = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary/"];
+    NSURL *blogUrl = [NSURL URLWithString:@"http://blog.elsupuesto.com/api/get_recent_posts/?count=20"];
     
     NSData *json = [NSData dataWithContentsOfURL:blogUrl];
     
@@ -41,18 +42,16 @@
     //self.blogPosts = [jsonDictionary objectForKey:@"posts"];
     
     self.blogPosts = [NSMutableArray array];
-    NSArray *blogPostArray = [jsonDictionary objectForKey:@"posts"];
+    NSArray *blogPostArray = [jsonDictionary objectForKey:@"posts"]; //All blog posts
     
     for (NSDictionary *bpDictionary in blogPostArray) {
         GPBlogPost *blogPost = [GPBlogPost blogPostWithTitle:[bpDictionary objectForKey:@"title"]];
-        blogPost.author = [bpDictionary objectForKey:@"author"];
-        blogPost.thumbnail = [bpDictionary objectForKey:@"thumbnail"];
+        blogPost.author = [[bpDictionary objectForKey:@"author"] objectForKey:@"name"];
+        //blogPost.thumbnail = [bpDictionary objectForKey:@"thumbnail"];
         blogPost.date = [bpDictionary objectForKey:@"date"];
         blogPost.url = [NSURL URLWithString:[bpDictionary objectForKey:@"url"]];
         [self.blogPosts addObject:blogPost];
     }
-    
-    NSMutableArray *arr = [NSMutableArray arrayWithObjects:@"a", @"b"];
     
 }
 
