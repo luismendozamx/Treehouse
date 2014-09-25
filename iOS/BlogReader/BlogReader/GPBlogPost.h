@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *author;
 @property (strong, nonatomic) NSString *thumbnail;
+@property (strong, nonatomic) UIImage *image;
 @property (strong, nonatomic) NSString *date;
 @property (strong, nonatomic) NSURL *url;
 

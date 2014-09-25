@@ -47,7 +47,11 @@
     for (NSDictionary *bpDictionary in blogPostArray) {
         GPBlogPost *blogPost = [GPBlogPost blogPostWithTitle:[bpDictionary objectForKey:@"title"]];
         blogPost.author = [[bpDictionary objectForKey:@"author"] objectForKey:@"name"];
-        //blogPost.thumbnail = [bpDictionary objectForKey:@"thumbnail"];
+        blogPost.thumbnail = [bpDictionary objectForKey:@"thumbnail"];
+        if ([blogPost.thumbnail isKindOfClass:[NSString class]]){
+            NSData *imageData = [NSData dataWithContentsOfURL:blogPost.thumbnailURL];
+            blogPost.image = [UIImage imageWithData:imageData];
+        }
         blogPost.date = [bpDictionary objectForKey:@"date"];
         blogPost.url = [NSURL URLWithString:[bpDictionary objectForKey:@"url"]];
         [self.blogPosts addObject:blogPost];
@@ -84,11 +88,7 @@
     //NSLog(@"%@", authorDictionary);
     
     if ([blogPost.thumbnail isKindOfClass:[NSString class]]){
-        NSData *imageData = [NSData dataWithContentsOfURL:blogPost.thumbnailURL];
-        UIImage *image = [UIImage imageWithData:imageData];
-        cell.imageView.image = image;
-    }else{
-        
+        cell.imageView.image = blogPost.image;
     }
     
     cell.textLabel.text = blogPost.title;
