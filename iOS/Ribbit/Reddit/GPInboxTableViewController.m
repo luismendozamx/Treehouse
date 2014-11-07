@@ -57,17 +57,20 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    PFUser *currentUser = [PFUser currentUser];
     
-    PFQuery *query = [PFQuery queryWithClassName:@"Message"];
-    [query whereKey:@"recepientIds" equalTo:[[PFUser currentUser] objectId]];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (error){
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-        }else{
-            self.messages = objects;
-            [self.tableView reloadData];
-        }
-    }];
+    if(currentUser){
+        PFQuery *query = [PFQuery queryWithClassName:@"Message"];
+        [query whereKey:@"recepientIds" equalTo:[[PFUser currentUser] objectId]];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            if (error){
+                NSLog(@"Error: %@ %@", error, [error userInfo]);
+            }else{
+                self.messages = objects;
+                [self.tableView reloadData];
+            }
+        }];
+    }
     
 }
 
