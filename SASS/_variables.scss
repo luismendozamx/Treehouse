@@ -1,0 +1,5 @@
+/* Variables */
+$primary-color: #333;
+$margin: 10px;
+$secondary-color: lighten($primary-color, 20%);
+$third-color: complement($primary-color);
