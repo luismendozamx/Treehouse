@@ -5,6 +5,21 @@
 	border-radius: $radius;
 }
 
+@mixin color($color){
+	.#{$color} {
+		color: $color;
+		background-image: url("img/#{$color}.jpg");
+	}
+}
+
+@mixin box($width){
+	@if $width > 100px{
+		padding: 0px;
+	} @else{
+		padding: 10px;
+	}
+}
+
 body{
 	background: $primary-color;
 	font-family: Futura, sans-serif;
@@ -40,3 +55,36 @@ body{
 .entry{
 	@extend %post;
 }
+
+@mixin band($members...){
+	@each $member in $members{
+		.member .#{$member}{
+			background-image: url("#{$member}.jpg");
+		}
+	}
+}
+
+@for $i from 1 through 10{
+	box:nth-child(#{$i}){
+		background: darken(white, $i);
+	}
+}
+
+@mixin square($size, $color:black){
+  height: $size;
+  width: $size;
+  border: 1px solid $color;
+}
+
+.box{
+  @include square($color: red, $size:10px);
+}
+
+@mixin rainbow($colors...){
+  @each $color in $colors{
+    .#{$color}{
+      
+    }
+  }
+}
+

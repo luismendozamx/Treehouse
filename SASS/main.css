@@ -23,4 +23,34 @@ body {
   .entry a {
     color: #333; }
 
+box:nth-child(1) {
+  background: #fcfcfc; }
+
+box:nth-child(2) {
+  background: #fafafa; }
+
+box:nth-child(3) {
+  background: #f7f7f7; }
+
+box:nth-child(4) {
+  background: whitesmoke; }
+
+box:nth-child(5) {
+  background: #f2f2f2; }
+
+box:nth-child(6) {
+  background: #f0f0f0; }
+
+box:nth-child(7) {
+  background: #ededed; }
+
+box:nth-child(8) {
+  background: #ebebeb; }
+
+box:nth-child(9) {
+  background: #e8e8e8; }
+
+box:nth-child(10) {
+  background: #e6e6e6; }
+
 /*# sourceMappingURL=main.css.map */
