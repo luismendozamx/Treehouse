@@ -17,4 +17,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  private
+    def logged_in?
+      current_user
+    end
+    helper_method :logged_in?
+
 end
