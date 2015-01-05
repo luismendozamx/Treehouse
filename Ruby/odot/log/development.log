@@ -13447,3 +13447,386 @@ Processing by TodoItemsController#index as HTML
   Rendered todo_items/index.html.erb within layouts/application (43.0ms)
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
 Completed 200 OK in 62ms (Views: 37.3ms | ActiveRecord: 21.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 11:00:37 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (34.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by TodoListsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mTodoList Load (17.8ms)[0m  [1mSELECT `todo_lists`.* FROM `todo_lists` WHERE `todo_lists`.`user_id` = 12[0m
+  Rendered todo_lists/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 279ms (Views: 114.8ms | ActiveRecord: 73.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 11:00:38 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-05 11:00:38 -0600
+
+
+Started GET "/assets/todo_items.css?body=1" for 127.0.0.1 at 2015-01-05 11:00:38 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 11:00:38 -0600
+
+
+Started GET "/assets/todo_lists.css?body=1" for 127.0.0.1 at 2015-01-05 11:00:38 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 11:00:38 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 11:00:38 -0600
+
+
+Started GET "/assets/todo_items.js?body=1" for 127.0.0.1 at 2015-01-05 11:00:38 -0600
+
+
+Started GET "/assets/todo_lists.js?body=1" for 127.0.0.1 at 2015-01-05 11:00:38 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 11:00:38 -0600
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2015-01-05 11:00:40 -0600
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jY6zdq/x9C0d7knl10cMJ4S8D2XY1GEo+OV9mSDotKs="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 11:00:40 -0600
+Processing by TodoListsController#index as HTML
+Redirected to http://localhost:3000/user_sessions/new
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user_sessions/new" for 127.0.0.1 at 2015-01-05 11:00:40 -0600
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/todo_items.css?body=1" for 127.0.0.1 at 2015-01-05 11:00:40 -0600
+
+
+Started GET "/assets/todo_items.js?body=1" for 127.0.0.1 at 2015-01-05 11:00:40 -0600
+
+
+Started GET "/assets/todo_lists.js?body=1" for 127.0.0.1 at 2015-01-05 11:00:40 -0600
+
+
+Started GET "/assets/todo_lists.css?body=1" for 127.0.0.1 at 2015-01-05 11:00:40 -0600
+
+
+Started GET "/user_sessions/new" for 127.0.0.1 at 2015-01-05 11:00:51 -0600
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password_resets/new" for 127.0.0.1 at 2015-01-05 11:01:01 -0600
+Processing by PasswordResetsController#new as HTML
+  Rendered password_resets/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2015-01-05 11:01:08 -0600
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tOXBlsQBCwhg9Pt0KhV5GEgJkj0w0t3Ba0IYnWsnf24=", "email"=>"luis@luismendoza.mx", "commit"=>"Reset password"}
+  [1m[35mUser Load (2.9ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'luis@luismendoza.mx' LIMIT 1
+  Rendered password_resets/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 14.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/todo_items.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:08 -0600
+
+
+Started GET "/assets/todo_lists.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:08 -0600
+
+
+Started GET "/assets/todo_lists.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:08 -0600
+
+
+Started GET "/assets/todo_items.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:08 -0600
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2015-01-05 11:01:15 -0600
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tOXBlsQBCwhg9Pt0KhV5GEgJkj0w0t3Ba0IYnWsnf24=", "email"=>"luis@mendoza.io", "commit"=>"Reset password"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'luis@mendoza.io' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (26.9ms)[0m  [1mUPDATE `users` SET `password_reset_token` = 'jmJ9UkIrJyPfaAe6P_ne0nmClv7J7EJdMWBvLJtBp-HUeNbl7KB5HvuGCx11OzGM', `updated_at` = '2015-01-05 17:01:15' WHERE `users`.`id` = 12[0m
+  [1m[35m (1.2ms)[0m  COMMIT
+  Rendered notifier/password_reset.text.erb (0.8ms)
+
+Sent mail to luis@mendoza.io (21.8ms)
+Date: Mon, 05 Jan 2015 11:01:16 -0600
+From: from@example.com
+To: Luis Mendoza <luis@mendoza.io>
+Message-ID: <54aac35c6a55f_4b9e3fd7e25a711c607c6@Luis-MacBookAir-2.local.mail>
+Subject: Reset your password
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Luis,
+
+You can reset your password here:
+
+http://localhost:3000/password_resets/jmJ9UkIrJyPfaAe6P_ne0nmClv7J7EJdMWBvLJtBp-HUeNbl7KB5HvuGCx11OzGM/edit
+Redirected to http://localhost:3000/login
+Completed 302 Found in 487ms (ActiveRecord: 28.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-01-05 11:01:16 -0600
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/todo_items.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:16 -0600
+
+
+Started GET "/assets/todo_items.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:16 -0600
+
+
+Started GET "/assets/todo_lists.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:16 -0600
+
+
+Started GET "/assets/todo_lists.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:16 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 11:01:26 -0600
+Processing by TodoListsController#index as HTML
+Redirected to http://localhost:3000/user_sessions/new
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user_sessions/new" for 127.0.0.1 at 2015-01-05 11:01:26 -0600
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:26 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:26 -0600
+
+
+Started GET "/assets/todo_items.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:26 -0600
+
+
+Started GET "/assets/todo_lists.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:26 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:26 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:26 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:26 -0600
+
+
+Started GET "/assets/todo_items.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:26 -0600
+
+
+Started GET "/assets/todo_lists.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:26 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:26 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 11:01:34 -0600
+Processing by TodoListsController#index as HTML
+Redirected to http://localhost:3000/user_sessions/new
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user_sessions/new" for 127.0.0.1 at 2015-01-05 11:01:34 -0600
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:34 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:34 -0600
+
+
+Started GET "/assets/todo_lists.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:34 -0600
+
+
+Started GET "/assets/todo_items.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:34 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:34 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:34 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:34 -0600
+
+
+Started GET "/assets/todo_items.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:34 -0600
+
+
+Started GET "/assets/todo_lists.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:35 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:35 -0600
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-01-05 11:01:55 -0600
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tOXBlsQBCwhg9Pt0KhV5GEgJkj0w0t3Ba0IYnWsnf24=", "email"=>"luis@mendoza.io", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'luis@mendoza.io' LIMIT 1[0m
+Redirected to http://localhost:3000/todo_lists
+Completed 302 Found in 93ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/todo_lists" for 127.0.0.1 at 2015-01-05 11:01:55 -0600
+Processing by TodoListsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mTodoList Load (0.3ms)[0m  [1mSELECT `todo_lists`.* FROM `todo_lists` WHERE `todo_lists`.`user_id` = 12[0m
+  Rendered todo_lists/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/todo_items.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:55 -0600
+
+
+Started GET "/assets/todo_lists.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:55 -0600
+
+
+Started GET "/assets/todo_items.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:55 -0600
+
+
+Started GET "/assets/todo_lists.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:55 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 11:01:58 -0600
+Processing by TodoListsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mTodoList Load (0.5ms)[0m  [1mSELECT `todo_lists`.* FROM `todo_lists` WHERE `todo_lists`.`user_id` = 12[0m
+  Rendered todo_lists/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:58 -0600
+
+
+Started GET "/assets/todo_lists.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:58 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:58 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:58 -0600
+
+
+Started GET "/assets/todo_items.css?body=1" for 127.0.0.1 at 2015-01-05 11:01:58 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:58 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:58 -0600
+
+
+Started GET "/assets/todo_items.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:58 -0600
+
+
+Started GET "/assets/todo_lists.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:58 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 11:01:58 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 11:02:10 -0600
+Processing by TodoListsController#index as HTML
+Redirected to http://localhost:3000/user_sessions/new
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user_sessions/new" for 127.0.0.1 at 2015-01-05 11:02:10 -0600
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 11:02:11 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-05 11:02:11 -0600
+
+
+Started GET "/assets/todo_items.css?body=1" for 127.0.0.1 at 2015-01-05 11:02:11 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-05 11:02:11 -0600
+
+
+Started GET "/assets/todo_lists.css?body=1" for 127.0.0.1 at 2015-01-05 11:02:11 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-05 11:02:11 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-05 11:02:11 -0600
+
+
+Started GET "/assets/todo_items.js?body=1" for 127.0.0.1 at 2015-01-05 11:02:11 -0600
+
+
+Started GET "/assets/todo_lists.js?body=1" for 127.0.0.1 at 2015-01-05 11:02:11 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-05 11:02:11 -0600
+
+
+Started GET "/user_sessions/new" for 127.0.0.1 at 2015-01-05 11:02:14 -0600
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2015-01-05 11:02:23 -0600
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tOXBlsQBCwhg9Pt0KhV5GEgJkj0w0t3Ba0IYnWsnf24="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 11:02:23 -0600
+Processing by TodoListsController#index as HTML
+Redirected to http://localhost:3000/user_sessions/new
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user_sessions/new" for 127.0.0.1 at 2015-01-05 11:02:23 -0600
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/todo_lists.css?body=1" for 127.0.0.1 at 2015-01-05 11:02:23 -0600
+
+
+Started GET "/assets/todo_items.js?body=1" for 127.0.0.1 at 2015-01-05 11:02:23 -0600
+
+
+Started GET "/assets/todo_lists.js?body=1" for 127.0.0.1 at 2015-01-05 11:02:23 -0600
+
+
+Started GET "/assets/todo_items.css?body=1" for 127.0.0.1 at 2015-01-05 11:02:23 -0600
