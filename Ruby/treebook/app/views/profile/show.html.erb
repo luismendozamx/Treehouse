@@ -1,0 +1,23 @@
+<div class="row page-header">
+  <div class="col-sm-6">
+    <h1><%= @user.full_name %></h1>
+    <p>@<%= @user.user_name %></p>
+  </div>
+</div>
+
+<% if @statuses %>
+  <% @statuses.each do |status| %>
+    <div class="row status">
+      <div class="col-sm-12">
+        <strong><%= status.user.full_name %></strong>
+        <p><%= status.content %></p>
+        <%= link_to time_ago_in_words(status.created_at), status %>
+        <span class="admin">
+          | <%= link_to "Edit", edit_status_path(status) %>
+          | <%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Delete Satus?' } %>
+        </span>
+      </div>
+    </div>
+  <% end %>
+<% end %>
+
