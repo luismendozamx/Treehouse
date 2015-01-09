@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'feed', to: 'statuses#index', as: :feed
 
   get ':id', to: 'profile#show', as: :username
+  get ':username', to: 'profile#show', as: :user_profile
 
   # Root
   root to: 'statuses#index'
