@@ -6,7 +6,9 @@ class User < ActiveRecord::Base
 
   has_many :statuses
   has_many :user_friendships
-  has_many :friends, through: :user_friendships
+  has_many :friends, -> { where state: 'accepted' }, through: :user_friendships
+  has_many :pending_user_friendships, -> { where state: 'pending'}, class_name: 'UserFriendship', foreign_key: :user_id
+  has_many :pending_friends, through: :pending_user_friendships, source: :friend
 
   validates :first_name, :last_name, :user_name, :email, presence: true
   validates :user_name, :email, uniqueness: true
