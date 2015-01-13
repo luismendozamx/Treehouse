@@ -7,7 +7,7 @@
 <% @statuses.each do |status| %>
   <div class="row status">
     <div class="col-sm-12">
-      <strong><%= status.user.full_name %></strong>
+      <strong><%= link_to status.user.full_name, profile_path(status.user) %></strong>
       <p><%= status.content %></p>
       <%= link_to time_ago_in_words(status.created_at), status %>
       <span class="admin">

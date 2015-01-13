@@ -2,6 +2,7 @@
   <div class="col-sm-6">
     <h1><%= @user.full_name %></h1>
     <p>@<%= @user.user_name %></p>
+    <%= link_to "Add friend", new_user_friendship_path(friend_id: @user) %>
   </div>
 </div>
 
