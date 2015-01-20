@@ -5,9 +5,9 @@ class UserFriendshipsController < ApplicationController
     @user_friendships = current_user.user_friendships.all
   end
 
-  def accept!
+  def accept
     @user_friendship = current_user.user_friendships.find(params[:id])
-    if @user_friendship.accept!
+    if @user_friendship.accept
       flash[:notice] = "You are now friends with #{@user_friendship.friend.first_name}"
     else
       flash[:alert] = "Friendship could not be accepted."
