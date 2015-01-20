@@ -7,7 +7,7 @@ class UserNotifier < ActionMailer::Base
     @user = user_friendship.user
     @friend = user_friendship.friend
 
-    mail to: @friend.email
+    mail to: @friend.email,
          subject: "#{@user.full_name} wants to be friends on Treebok"
   end
 
@@ -17,7 +17,7 @@ class UserNotifier < ActionMailer::Base
     @user = user_friendship.user
     @friend = user_friendship.friend
 
-    mail to: @user.email
+    mail to: @user.email,
          subject: "#{@friend.full_name} has accepted your request"
   end
 
