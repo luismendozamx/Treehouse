@@ -173,7 +173,7 @@
     NSString *fileType;
     
     if(self.image != nil){
-        UIImage *newImage = [self resizeImage:self.image toWidth:640.0f andHeight:480.0f];
+        UIImage *newImage = [self resizeImage:self.image percent:0.5];
         fileData = UIImagePNGRepresentation(newImage);
         fileName = @"image.png";
         fileType = @"image";
@@ -213,6 +213,18 @@
     CGRect newRectangle = CGRectMake(0, 0, width, height);
     UIGraphicsBeginImageContext(newSize);
     [self.image drawInRect:newRectangle];
+    UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resizedImage;
+}
+
+-(UIImage *)resizeImage:(UIImage *)image percent:(float)percent{
+    float width = image.size.width;
+    float height = image.size.height;
+    CGSize newSize = CGSizeMake(width*percent, height*percent);
+    CGRect newRectangle = CGRectMake(0, 0, width*percent, height*percent);
+    UIGraphicsBeginImageContext(newSize);
+    [image drawInRect:newRectangle];
     UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return resizedImage;
